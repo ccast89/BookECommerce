@@ -4,9 +4,5 @@
   box-sizing: border-box; }
 
 body {
-  background-image: url(../../assets/images/glasses.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: whitesmoke;
-}
+  background-color: black;
+  color: aliceblue; }
