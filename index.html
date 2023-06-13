@@ -3,28 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>HP - QuizTime</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books About Us</title>
+    <link rel="shortcut icon" href="./assets/images/BAU.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Niveles</li>
-                <li>Log in</li>
-            </ul>
-        </nav>
+        <div class="nav-wraper">
+            <nav>
+                <a href="#"> <img class="logo" src="./assets/images/BAU.png" alt="Logo de la página"></a>
+                <input type="checkbox" name="" id="toggle">
+                <label for="toggle"><i class="material-icons">menu</i></label>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="./pages/saficos.html">Sáficos</a></li>
+                        <li><a href="./pages/gays.html">Gays</a></li>
+                        <li><a href="./pages/trans.html">Trans</a></li>
+                        <li><a href="./pages/ingles.html">Inglés</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1>¡Bienvenidos!</h1>
-        <h2>Comprueba cuanto sabes sobre Harry Potter con este quiz</h2>
-        <h3>Elige un nivel y comienza</h3>
+        <div class="rainbow"></div>
+            <section>
+                <div class="banner-index">
+                    <h1>Books About Us</h1>
+                </div>
+            </section>
+            <section>
+                <h2>Que la literatura tiene un poder incalculable para empoderar y concientiziar a la sociedad sobre la diversidad del mundo es incuestionable. Los libros nos ayudan a visibilizarnos, nos dan voz, sirven de plataforma para dar a conocer nuestras historias. También nos hacen pensar, y nos educan, en cierto modo, sobre temas y aspectos que nunca nos habíamos planteado.
+                    En esta web vas a encontrar la mejor selección de libros con temática LGBTIQ+. Vas a encontrar novelas y libros de ficción donde los personajes tienen diversas orientaciones sexuales y una mirada diferente que, por fin, toma su protagonismo.</h2>
+                <div>
+                    <h3>Tenemos muchos libros para que elijas</h3>
+                </div>
+            </section>
+            <button id="dark" class="dark-mode">Cambiar a Modo Oscuro</button>
+            <div id="store">
+                
+            </div>
+        <h4>Tu Carrito</h4>
+        <div id="carrito">
+        </div>
     </main>
+    </div>
     <footer>
-
     </footer>
-<script src="./index.js"></script>
+    </main>
+    <script src="./index.js"></script>
 </body>
+
 </html>

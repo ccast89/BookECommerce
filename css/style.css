@@ -3,6 +3,175 @@
   padding: 0;
   box-sizing: border-box; }
 
+body header {
+  background-color: #383838;
+  width: 100%;
+  height: 100%;
+  padding: 2px; }
+  body header .nav-wraper {
+    width: 100%;
+    padding: 1rem; }
+  body header nav {
+    display: flex;
+    flex-direction: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: none;
+    padding: 1rem 1.5rem; }
+  body header ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem; }
+    body header ul li a {
+      text-decoration: none;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px; }
+      body header ul li a:hover {
+        font-size: 20px;
+        color: black;
+        padding: 2px;
+        background-color: whitesmoke;
+        padding: 4px;
+        border-radius: 5%; }
+
+nav #toggle, nav label {
+  display: none; }
+
+.logo {
+  grid-area: logo;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 4px; }
+  .logo:hover {
+    transform: scale(1.3); }
+
+body::-webkit-scrollbar {
+  width: 7px; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #B2B2B2;
+  border-radius: 20px; }
+
 body {
-  background-color: black;
-  color: #56236d; }
+  background-color: #FEFBF3; }
+
+main h1 {
+  font-family: "Noticia Text", serif;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+main p {
+  font-family: "Poppins", sans-serif; }
+
+main h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  padding: 2px;
+  margin: 20px; }
+
+main h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  text-align: center;
+  margin: auto; }
+
+main h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 50px; }
+
+.banner-index {
+  background-image: url("../../assets/images/lgbtq.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  background-position: center;
+  height: 400px; }
+
+.rainbow {
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, purple); }
+
+.container {
+  row-gap: 5px; }
+
+.cover {
+  width: 170px;
+  height: 230px;
+  padding: 2px; }
+
+section::-webkit-scrollbar {
+  width: 0.5px;
+  opacity: 0.5; }
+
+section::-webkit-scrollbar-thumb {
+  width: 0.5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px; }
+
+#store {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 5px; }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  width: 200px;
+  background-color: #FEFBF3;
+  background-color: rgba(66, 38, 62, 0.2); }
+
+.card img {
+  width: 150px;
+  height: 200px;
+  object-fit: contain; }
+
+.card-content {
+  text-decoration: none;
+  text-align: justify;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  gap: 5px; }
+  .card-content h5 {
+    font-size: 20px;
+    text-align: center; }
+
+button {
+  display: flex;
+  background-color: rgba(19, 13, 18, 0.2);
+  color: #1a1816;
+  border: rgba(19, 13, 18, 0.2);
+  padding: 5px;
+  margin: 2px; }
+
+.dark-mode {
+  background-color: #3f2f53;
+  color: #FEFBF3; }
+  .dark-mode .card {
+    background-color: #a9bfdd;
+    background-color: rgba(193, 178, 202, 0.623); }
