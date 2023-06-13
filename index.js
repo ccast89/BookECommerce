@@ -192,13 +192,3 @@ function eliminarDelCarrito(indice){
     }
     mostrarCarrito()
 }
-
-libros.sort((objetoA,objetoB) => {
-    if(objetoA.precio > objetoB.precio){
-        return -1
-    }else if(objetoA.precio < objetoB.precio){
-        return 1
-    }else{
-        return 0
-    }
-})
