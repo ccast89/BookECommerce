@@ -64,7 +64,7 @@ const libros = [
         "autor": 'John Boyne',
         "tipo":'Trans',
         "descripcion": 'Sam Waver es un chico solitario al que le cuesta hacer amigos, y sus padres están tan ajetreados que a veces se siente invisible. Por suerte, cuenta con su hermano mayor, Jason, quien parece tener una vida perfecta: no sólo es encantador y popular, también es la estrella del equipo de fútbol, y todas las chicas están deseando salir con él. Sam lo idolatra. Sin embargo, un día, Jason reúne a su familia para contarle un secreto que lleva guardando mucho tiempo: en realidad se llama Jessica. Sus padres no dan crédito y Sam descubre que no son las personas abiertas y tolerantes que creía. Las vidas de todos dan un vuelco y parece que las cosas nunca volverán a ser como antes.',
-        "precio": 12.40,
+        "precio": 12.400,
     },
     {
         "id": 'chica',
@@ -81,7 +81,7 @@ const libros = [
         "nombre": 'Stay gold: No dejes de ser tú mismo',
         "autor": 'Tobly McSmith',
         "tipo":'Trans',
-        "descripcion": 'Cuando la gente ve a George, cree que es un niño. Pero ella sabe que no es verdad. George sabe que es una niña. George cree que jamás podrá decirle a nadie que ella, en realidad, es una niña. Un día, su profesora anuncia que su clase va a representar una obra de teatro. Y George desea con todas sus fuerzas el papel de la niña protagonista, Charlotte. Pero su profesora le dice que ni siquiera puede hacer la prueba para el papel... porque es un chico. Con la ayuda de Kelly, su mejor amiga, George traza un plan. No solo para poder ser Charlotte en la obra, sino para que todo el mundo sepa, de una vez por todas, que es "ella" en realidad.',
+        "descripcion": 'Cuando la gente ve a George, cree que es un niño. Pero ella sabe que es una niña. Un día, su profesora anuncia que su clase va a representar una obra de teatro. Y George desea con todas sus fuerzas el papel de la niña protagonista, Charlotte. Pero su profesora le dice que ni siquiera puede hacer la prueba para el papel... porque es un chico. Con la ayuda de Kelly, su mejor amiga, George traza un plan. No solo para poder ser Charlotte en la obra, sino para que todo el mundo sepa, de una vez por todas, que es "ella" en realidad.',
         "precio": 14.460,
     },
     {
@@ -112,6 +112,19 @@ const libros = [
         "precio": 16.194,
     }
 ]
+
+const buttonDarkMode = document.querySelector("#dark");
+buttonDarkMode.addEventListener("click", cambiarADark)
+
+function cambiarADark(){
+    body.classList.toggle("dark-mode");
+    
+    if(body.classList.contains("dark-mode")){
+        buttonDarkMode.innerText = "Cambiar a Modo Claro"
+    }else{
+        buttonDarkMode.innerText = "Cambiar a Modo Oscuro"
+    }
+}
 
 function mostrarLibros(){
     const $store = d.getElementById("store");
@@ -180,15 +193,12 @@ function eliminarDelCarrito(indice){
     mostrarCarrito()
 }
 
-const buttonDarkMode = document.querySelector("#dark");
-buttonDarkMode.addEventListener("click", cambiarADark)
-
-function cambiarADark(){
-    body.classList.toggle("dark-mode");
-    
-    if(body.classList.contains("dark-mode")){
-        buttonDarkMode.innerText = "Cambiar a Modo Claro"
+libros.sort((objetoA,objetoB) => {
+    if(objetoA.precio > objetoB.precio){
+        return -1
+    }else if(objetoA.precio < objetoB.precio){
+        return 1
     }else{
-        buttonDarkMode.innerText = "Cambiar a Modo Oscuro"
+        return 0
     }
-}
+})
