@@ -4,7 +4,7 @@ body{
 main{
     h1{
         font-family: $fuente-titulos;
-        font-size: 60px;
+        font-size: 75px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -14,16 +14,20 @@ main{
     }
     h2{
         font-family: $fuente-texto;
-        font-size: 18px;
+        text-align:center;
+    }
+    h3{
+        font-family: $fuente-texto;
+        font-size: 20px;
         text-align:justify;
         padding: 2px;
         margin: 20px;;
     }
     h4{
         font-family: $fuente-texto;
-        font-size: 27px;
+        font-size: 25px;
         text-align: center;
-        margin: auto;
+        margin: 10px;
     }
     h5{
         font-family: $fuente-texto;
@@ -31,6 +35,13 @@ main{
         text-align: center;
         padding-bottom: 20px;
         margin-top: 50px;
+    }
+    h6{
+        font-family: $fuente-texto;
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 20px;
+        margin: 2px;
     }
 }
 .banner-index{
@@ -47,14 +58,64 @@ main{
     height: 20px;
     background: linear-gradient(to right,red,orange,yellow,green,blue,purple);
 }
-.container{
-    row-gap: 5px;
+
+.cards{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 20px;
+    margin: 50px;
 }
-.cover{
-    width: 170px;
-    height: 230px;
-    padding: 2px;
+
+.card{
+    @include flex(column, center, center, wrap, 10px);
+    padding: 10px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    background-color: #FEFBF3;
+    background-color: rgba(66, 38, 62, 0.2);
+    text-align: justify;
 }
+.card img{
+    width: 150px;
+    height: 200px;
+    margin: 5px;
+    object-fit: contain;
+    transition: 0.3s cubic-bezier(0.55, 0.55, 0.675, 0.19);
+}
+.card-content{
+    @include flex(column, center, center, none, 5px);
+        h5{
+            font-size: 20px;
+            text-align: center;
+        }
+}
+.descripcion{
+    font-size: 15px;
+    margin: 5px;
+}
+.precio{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+
+}
+.boton-carrito{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: #5f5e5e;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
 section::-webkit-scrollbar{
     width: 0.5px;
     opacity: 0.5;
@@ -64,52 +125,3 @@ section::-webkit-scrollbar-thumb{
     background-color:rgba($color: #000000, $alpha: 0.3);
     border-radius: 20px;
 }
-
-#libreria{
-    @include flex(row, space-around, none, wrap, 15px);
-    padding: 5px;
-}
-.card{
-    @include flex(column, center, center, wrap, 10px);
-    padding: 10px;
-    width: 200px;
-    background-color: #FEFBF3;
-    background-color: rgba(66, 38, 62, 0.2)
-}
-.card img{
-    width: 150px;
-    height: 200px;
-    object-fit: contain;
-}
-.card-content{
-    text-decoration: none;
-    text-align: justify;
-    color: #000000;
-    font-family: $fuente-texto;
-    font-size: 12px;
-    @include flex(column, center, center, none, 5px);
-        h5{
-            font-size: 20px;
-            text-align: center;
-        }
-}
-button{
-    display: flex;
-    background-color: rgba(19, 13, 18, 0.2);
-    color: #1a1816;
-    border: rgba(19, 13, 18, 0.2);
-    padding: 5px;
-    margin: 2px;
-    :hover{
-        transform: scale(1.3);
-    }
-}
-
-.dark-mode{
-    background-color: rgb(63, 47, 83);
-    color: #FEFBF3;
-    .card{
-        background-color: #a9bfdd;
-        background-color: rgba(193, 178, 202, 0.623)
-    }
-    }

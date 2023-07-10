@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="./assets/images/BAU.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <header>
         <div class="nav-wraper">
@@ -19,12 +18,16 @@
                 <div class="menu">
                     <ul>
                         <li><a href="#">Inicio</a></li>
-                        <li><a id="safico" href="./pages/saficos.html">Sáficos</a></li>
-                        <li><a id="gay" href="./pages/gays.html">Gays</a></li>
-                        <li><a id="trans" href="./pages/trans.html">Trans</a></li>
-                        <li><a id="ingles" href="./pages/ingles.html">Inglés</a></li>
+                        <li><a id="safico">Sáficos</a></li>
+                        <li><a id="gay">Gays</a></li>
+                        <li><a id="trans">Trans</a></li>
+                        <li><a id="ingles">Inglés</a></li>
                     </ul>
                 </div>
+                <button id="dark" class="dark-mode">Cambiar a modo oscuro</button>
+                <a href="#" id="cart-icon">
+                    <img src="./assets/images/iconos/bolsa.png" alt="Carrito de Compras" class="cart">
+                    <span id="contador">0</span></a>
             </nav>
         </div>
     </header>
@@ -42,16 +45,39 @@
                     <h4>Tenemos muchos libros para que elijas</h4>
                 </div>
             </section>
-            <button id="dark" class="dark-mode">Cambiar a Modo Oscuro</button>
-            <div class="cards">
-
+            <div class="cards"></div>
+            <div class="modal" id="cart-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Carrito de compras</h2>
+                    <div class="contenedor_compras">
+                        <div class="tbody">
+                            <div class="columna_1">
+                                
+                            </div>
+                            <div class="columna_2">
+                                Nombre del producto
+                            </div>
+                            <div class="columna_3">
+                                <input type="number">
+                            </div>
+                            <div class="columna_4">
+                                Precio
+                            </div>
+                            <div>
+                                <button>X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
     </main>
     </div>
     <footer>
     </footer>
     </main>
+    <script src="./JS/filtro.js" type="module"></script>
+    <script src="./JS/modal.js"></script>
     <script src="./JS/index.js" type="module"></script>
 </body>
 

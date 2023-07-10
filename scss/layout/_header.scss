@@ -15,6 +15,7 @@ body{
                 ul{
                     list-style: none;
                     display: flex;
+                    align-self: center;
                     gap: 2rem;
                     li{
                         a{
@@ -49,6 +50,139 @@ nav #toggle, nav label{
         color: black;
     }
 }
+
+/* ESTILOS DEL MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    /* max-width: 400px; */
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+  /* ESTILOS DE LA TABLA DEL CARRITO */
+.tbody {
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 30% 30% 15% 15% 10%;
+    grid-row: 100px;
+}
+
+.columna_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.columna_1 img {
+    width: 100px;
+    height: auto;
+}
+
+.columna_2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.columna_3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.columna_3 input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+.columna_4 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.columna_5 {
+    grid-column: 5/6;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+
+.cart{
+    width: 50px;
+    height: 50px;
+
+}
+.img_cart {
+    width: 100px;
+    height: auto;
+}
+
+#contador{
+    text-decoration: none;
+    color: white;
+}
+.dark-mode{
+    background-color:rgb(41, 39, 39);
+    color: #FEFBF3;
+    padding: 5px;
+    .card{
+        background-color: rgba(193, 178, 202, 0.623)
+    }
+}
+// button{
+//     display: flex;
+//     align-self: center;
+//     background-color: rgba(19, 13, 18, 0.2);
+//     background-color: rgba(19, 13, 18, 0.2);
+//     border: rgba(19, 13, 18, 0.2);
+//     padding: 5px;
+//     margin: 10px;
+//     :hover{
+//         transform: scale(1.3);
+//     }
+// }
+
+// #dark{
+//     button{
+//         background-color: rgba(19, 13, 18, 0.2);
+//         border: rgba(19, 13, 18, 0.2);
+//         padding: 5px;
+//         margin: 10px;
+//         :hover{
+//             transform: scale(1.3);
+//         }
+//     }
+// }
+
 body::-webkit-scrollbar{
     width: 7px;
 }
