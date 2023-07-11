@@ -1,8 +1,8 @@
 import { getLibros } from "../services/services.js";
+
 const body = document.body
 let CARRITO = [];
 const $carrito = document.querySelector('#contador');
-
 
 const buttonDarkMode = document.querySelector("#dark");
 buttonDarkMode.addEventListener("click", cambiarADark)

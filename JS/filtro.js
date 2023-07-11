@@ -1,5 +1,3 @@
-//const categoriasLibros = document.querySelector('li:nth-child(2)');
-
 import { mostrarLibros } from "./index.js";
 const filtrosCategorias = (LIBROS)=>{
     

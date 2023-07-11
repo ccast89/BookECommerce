@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books About Us</title>
     <link rel="shortcut icon" href="./assets/images/BAU.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
                 <label for="toggle"><i class="material-icons">menu</i></label>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
+                        <li><a href="./index.html">Inicio</a></li>
                         <li><a id="safico">Sáficos</a></li>
                         <li><a id="gay">Gays</a></li>
                         <li><a id="trans">Trans</a></li>
@@ -26,7 +27,7 @@
                 </div>
                 <button id="dark" class="dark-mode">Cambiar a modo oscuro</button>
                 <a href="#" id="cart-icon">
-                    <img src="./assets/images/iconos/bolsa.png" alt="Carrito de Compras" class="cart">
+                    <img src="./assets/images/iconos/carrito-rojo.png" alt="Carrito de Compras" class="cart">
                     <span id="contador">0</span></a>
             </nav>
         </div>
@@ -44,19 +45,25 @@
                 <div>
                     <h4>Tenemos muchos libros para que elijas</h4>
                 </div>
+                <div>
+                    <a href="#">
+                        <button id="flecha">
+                            ↑
+                        </button></a>
+                </div>
             </section>
             <div class="cards"></div>
             <div class="modal" id="cart-modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <h2>Carrito de compras</h2>
+                    <h2>Ya casi son tuyos</h2>
                     <div class="contenedor_compras">
                         <div class="tbody">
                             <div class="columna_1">
                                 
                             </div>
                             <div class="columna_2">
-                                Nombre del producto
+                                Nombre
                             </div>
                             <div class="columna_3">
                                 <input type="number">
@@ -73,7 +80,27 @@
             </div>
     </main>
     </div>
-    <footer>
+    <footer class="grid-footer">
+        <div class="fot-1">
+            <a href="./index.html"><img class="logo" src="./assets/images/BAU.png" alt="Logo de la página"></a>
+        </div>
+        <div class="list-footer fot-2">
+            <ul>
+                <li><a id="safico">Sáficos</a></li>
+                <li><a id="gay">Gays</a></li>
+                <li><a id="trans">Trans</a></li>
+                <li><a id="ingles">Inglés</a></li>
+            </ul>
+        </div>
+        <div class="social fot-3">
+            <span>Seguinos</span>
+            <a class="social-link" href="https://wa.me/qr/LCVV323CI6ZTB1" target="_blank"><img class="icon" src="./assets/images/iconos/whatsapp-logo.png" alt="Logo de whatsapp">
+            </a>
+            <a class="social-link" href="https://twitter.com/carlacast89?t=Sejik0FYmQeTZZW63l4Xrw&s=08" target="_blank"><img class="icon" src="./assets/images/iconos/twitter-logo.png" alt="Logo de twitter"></a>
+            </a>
+            <a class="social-link" href="https://instagram.com/booksaboutus.tuc?igshid=ZDdkNTZiNTM=" target="_blank"><img class="icon" src="./assets/images/iconos/instagram-logo.png" alt="Logo de instagram"></a>
+            </a>
+        </div>
     </footer>
     </main>
     <script src="./JS/filtro.js" type="module"></script>
