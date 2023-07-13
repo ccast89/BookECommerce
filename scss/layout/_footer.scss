@@ -1,12 +1,7 @@
 footer{
-    ul{
-        li{
-            list-style: none;
-            a{
-                text-decoration: none;
-                color: white;
-            }
-        }
+    p{
+        color: white;
+        font-size: 20px;
     }
     .logo{
         grid-area: logo;
@@ -29,10 +24,6 @@ footer{
 }
 .fot-2{
     grid-area: fot2;
-    a{
-        font-family: $fuente-texto;
-        font-size: 12px;
-    }
 }
 .fot-3{
     grid-area: fot3;
@@ -40,48 +31,6 @@ footer{
 .icon{
     width: 40px;
     height: 40px;
-}
-
-// ANIMACIONES
-.list-footer ul {
-    width: 200px;
-    height: 90px;
-    border-radius: 4px;
-    background: #3d303d;
-    display: flex;
-    gap: 5px;
-    padding: .4em;
-}
-.list-footer li {
-    height: 100%;
-    flex: 1;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 2px;
-    transition: all .5s;
-    background: #3d303d;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}  
-.list-footer li:hover {
-    flex: 4;
-}
-
-.list-footer a {
-    font-family: $fuente-texto;
-    font-size: 12px;
-    min-width: 14em;
-    padding: .5em;
-    text-align: center;
-    transform: rotate(-90deg);
-    transition: all .5s;
-    color: white;
-    letter-spacing: .1em;
-}
-.list-footer a:hover {
-    transform: rotate(0);
 }
 
 .social {

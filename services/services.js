@@ -1,7 +1,7 @@
 import { mostrarLibros } from "../JS/index.js";
 import { filtrosCategorias } from "../JS/filtro.js";
 
-const getLibros = () =>{
+const getLibros = () => {
     fetch('./assets/libros.json')
     .then(res => res.json())
     .then(data => {

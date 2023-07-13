@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body header {
-  background-color: #585454;
+  background-color: #4d3e4e;
   width: 100%;
   height: 100%;
   padding: 2px; }
@@ -53,14 +53,15 @@ nav #toggle, nav label {
 .dark-mode {
   background-color: #292727;
   color: #FEFBF3;
-  padding: 5px;
-  cursor: pointer; }
+  padding: 5px; }
   .dark-mode h1 {
     color: black; }
   .dark-mode .card {
     background-color: rgba(193, 178, 202, 0.623); }
+  .dark-mode .modal-content {
+    background-color: #726b72; }
 
-.boton-carrito {
+.boton-card {
   display: flex;
   align-items: center;
   margin: auto;
@@ -81,10 +82,8 @@ nav #toggle, nav label {
   background-color: #FEFBF3; }
 
 #contador {
-  text-decoration: none;
-  color: white; }
-  #contador span a {
-    text-decoration: none; }
+  color: white;
+  text-decoration: none; }
 
 .modal {
   display: none;
@@ -98,11 +97,10 @@ nav #toggle, nav label {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .modal-content {
-  background-color: #fff;
+  background-color: #ece6ec;
   margin: 10% auto;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
-  /* max-width: 400px; */
   width: 50%;
   text-align: center;
   position: relative; }
@@ -111,7 +109,7 @@ nav #toggle, nav label {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #aaa;
+  color: #6c5872;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer; }
@@ -135,12 +133,14 @@ nav #toggle, nav label {
 .columna_2 {
   grid-column: 2/3;
   grid-row: 1/2;
-  text-align: center; }
+  text-align: center;
+  font-family: "Poppins", sans-serif; }
 
 .columna_3 {
   grid-column: 3/4;
   grid-row: 1/2;
-  text-align: center; }
+  text-align: center;
+  font-family: "Poppins", sans-serif; }
 
 .columna_3 input {
   width: 50px;
@@ -150,12 +150,25 @@ nav #toggle, nav label {
 .columna_4 {
   grid-column: 4/5;
   grid-row: 1/2;
-  text-align: center; }
+  text-align: center;
+  font-family: "Poppins", sans-serif; }
 
 .columna_5 {
   grid-column: 5/6;
   grid-row: 1/2;
   text-align: center; }
+
+.total {
+  font-family: "Poppins", sans-serif;
+  text-align: center; }
+
+.botonCompra {
+  background-color: #7b5c7e;
+  color: #FEFBF3;
+  padding: 10px;
+  margin: 10px;
+  border: #7b5c7e;
+  border-radius: 7%; }
 
 body::-webkit-scrollbar {
   width: 7px; }
@@ -303,11 +316,9 @@ section::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px; }
 
-footer ul li {
-  list-style: none; }
-  footer ul li a {
-    text-decoration: none;
-    color: white; }
+footer p {
+  color: white;
+  font-size: 20px; }
 
 footer .logo {
   grid-area: logo;
@@ -330,9 +341,6 @@ footer .logo {
 
 .fot-2 {
   grid-area: fot2; }
-  .fot-2 a {
-    font-family: "Poppins", sans-serif;
-    font-size: 12px; }
 
 .fot-3 {
   grid-area: fot3; }
@@ -340,45 +348,6 @@ footer .logo {
 .icon {
   width: 40px;
   height: 40px; }
-
-.list-footer ul {
-  width: 200px;
-  height: 90px;
-  border-radius: 4px;
-  background: #3d303d;
-  display: flex;
-  gap: 5px;
-  padding: .4em; }
-
-.list-footer li {
-  height: 100%;
-  flex: 1;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: all .5s;
-  background: #3d303d;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.list-footer li:hover {
-  flex: 4; }
-
-.list-footer a {
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  min-width: 14em;
-  padding: .5em;
-  text-align: center;
-  transform: rotate(-90deg);
-  transition: all .5s;
-  color: white;
-  letter-spacing: .1em; }
-
-.list-footer a:hover {
-  transform: rotate(0); }
 
 .social {
   position: relative;

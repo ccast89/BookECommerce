@@ -25,7 +25,7 @@
                         <li><a id="ingles">Inglés</a></li>
                     </ul>
                 </div>
-                <button id="dark" class="dark-mode">Cambiar a modo oscuro</button>
+                <button id="dark" class="dark-mode">Modo Oscuro</button>
                 <a href="#" id="cart-icon">
                     <img src="./assets/images/iconos/carrito-rojo.png" alt="Carrito de Compras" class="cart">
                     <span id="contador">0</span></a>
@@ -56,24 +56,21 @@
             <div class="modal" id="cart-modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <h2>Ya casi son tuyos</h2>
+                    <h2>Tus Compras</h2>
                     <div class="contenedor_compras">
                         <div class="tbody">
-                            <div class="columna_1">
-                                
-                            </div>
-                            <div class="columna_2">
-                                Nombre
-                            </div>
+                            <div class="columna_1"></div>
+                            <div class="columna_2"></div>
                             <div class="columna_3">
                                 <input type="number">
                             </div>
-                            <div class="columna_4">
-                                Precio
-                            </div>
+                            <div class="columna_4"></div>
                             <div>
                                 <button>X</button>
                             </div>
+                        </div>
+                        <div class="total">
+                            <p>Total: </p>
                         </div>
                     </div>
                 </div>
@@ -84,13 +81,8 @@
         <div class="fot-1">
             <a href="./index.html"><img class="logo" src="./assets/images/BAU.png" alt="Logo de la página"></a>
         </div>
-        <div class="list-footer fot-2">
-            <ul>
-                <li><a id="safico">Sáficos</a></li>
-                <li><a id="gay">Gays</a></li>
-                <li><a id="trans">Trans</a></li>
-                <li><a id="ingles">Inglés</a></li>
-            </ul>
+        <div class="fot-2">
+            <p>GRACIAS POR ELEGIRNOS</p>
         </div>
         <div class="social fot-3">
             <span>Seguinos</span>
@@ -103,6 +95,7 @@
         </div>
     </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./JS/filtro.js" type="module"></script>
     <script src="./JS/modal.js"></script>
     <script src="./JS/index.js" type="module"></script>

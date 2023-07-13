@@ -1,4 +1,5 @@
 import { mostrarLibros } from "./index.js";
+
 const filtrosCategorias = (LIBROS)=>{
     
     const safico = document.querySelector('#safico');

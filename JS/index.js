@@ -1,33 +1,22 @@
 import { getLibros } from "../services/services.js";
 
 const body = document.body
+
 let CARRITO = [];
+
 const $carrito = document.querySelector('#contador');
 
-const buttonDarkMode = document.querySelector("#dark");
-buttonDarkMode.addEventListener("click", cambiarADark)
+document.addEventListener('DOMContentLoaded', cargaInicial); 
 
-function cambiarADark(){
-    body.classList.toggle("dark-mode");
-    
-    if(body.classList.contains("dark-mode")){
-        buttonDarkMode.innerText = "Cambiar a Modo Claro"
-    }else{
-        buttonDarkMode.innerText = "Cambiar a Modo Oscuro"
-    }
-}
-const cargaInicial = ()=>{
+function cargaInicial() {
     obtenerCarritoDelLocalStorage();
     getLibros();
     mostrarCarrito();
 }
 
-document.addEventListener('DOMContentLoaded', cargaInicial); 
-
-
 const mostrarLibros = (LIBROS)=>{
     const $cards = document.querySelector('.cards');
-    $cards.innerHTML = ''
+    $cards.innerHTML = '';
 
     LIBROS.forEach(libro=> {
         const $div = document.createElement('div');
@@ -58,9 +47,17 @@ const mostrarLibros = (LIBROS)=>{
 
         const $button = document.createElement('button');
         $button.textContent = 'Sumalo a tu biblioteca';
-        $button.classList.add('boton-carrito');
+        $button.classList.add('boton-card');
         $button.addEventListener('click', ()=>{
             agregarAlCarrito(libro);
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Se agregó al carrito',
+                showConfirmButton: false,
+                timer: 1500,
+                width: '400px',
+            })
         })
 
         $div.appendChild($h2);
@@ -96,9 +93,7 @@ const agregarAlCarrito =(libro) =>{
     
     const totalCantidad = CARRITO.reduce((total, item) => total + item.cantidad, 0);
     $carrito.textContent = totalCantidad;
-    
-    // toastify("Agregaste un libro a tu biblioteca", "success");
-    
+        
     mostrarCarrito();
 
     guardarCarritoEnLocalStorage();
@@ -135,11 +130,11 @@ const mostrarCarrito = ()=>{
         const $input = document.createElement('input');
         $input.type = 'number';
         $input.value = libro.cantidad;
+
         $input.addEventListener('change', () => {
             cambiarCantidad(libro.id, +($input.value));
             totalIndividual(libro.id, libro.precio, +($input.value));
         })
-        //     totalIndividual(libro.id, libro.precio, +($input.value));
     
         $div4.appendChild($input);
         $div.appendChild($div4);
@@ -154,35 +149,63 @@ const mostrarCarrito = ()=>{
     
         const $button = document.createElement('button');
         $button.textContent = 'X';
+        
         $button.addEventListener('click', () => {
             eliminarLibro(libro.id);
-            // const totalCantidad = CARRITO.reduce((total, item) => total + item.cantidad, 0);
-            // $carrito.textContent = totalCantidad;
+            const totalCantidad = CARRITO.reduce((total, item) => total + item.cantidad, 0);
+            $carrito.textContent = totalCantidad;
+            Swal.fire({
+                icon: 'error',
+                title: 'Se eliminó del carrito',
+                text: 'Puedes volver a agregarlo cuando quieras',
+            });
         });
+
     
         $div6.appendChild($button);
         $div.appendChild($div6);
-    
+
+
         $contenedorCarrito.appendChild($div);
 
-        // const totalCantidad = CARRITO.reduce((total, item) => total + item.cantidad, 0);
-        // $carrito.textContent = totalCantidad;
-        // toastify("Cantidad cambiada", "success");
+        const totalCantidad = CARRITO.reduce((total, item) => total + item.cantidad, 0);
+        $carrito.textContent = totalCantidad;
         });
+
+
+        const $div7 = document.createElement('div');
+        $div7.classList.add('columna_4');
+        
+        const $buttonCompra = document.createElement('button');
+        $buttonCompra.classList.add('columna_4');
+        $buttonCompra.classList.add('botonCompra');
+        $buttonCompra.textContent = 'Comprar';
+
+        $buttonCompra.addEventListener('click', () => {
+            CARRITO = [];
+            $contenedorCarrito.innerHTML = '';
+            const totalCantidad = CARRITO.reduce((total, item) => total + item.cantidad, 0);
+            $carrito.textContent = totalCantidad;
+            Swal.fire({
+                icon: 'success',
+                title: 'Gracias por comprar con nosotros',
+                text: 'Disfrutá tus libros y volvé pronto',
+            });
+            guardarCarritoEnLocalStorage();
+        });
+
+        $div7.appendChild($buttonCompra);
+        $contenedorCarrito.appendChild($div7);
     }
 
 
-const totalIndividual = (id, precio, cantidad)=>{
-    const libro = CARRITO.find (libro => libro.id === id);
-    if(cantidad > 0){
-        libro.total = precio * cantidad;
-    }else{
-        eliminarLibro(id);
-    }
 
-    mostrarCarrito();
-    guardarCarritoEnLocalStorage();
-}
+    // let totalCarrito = 0;
+    // let totalCantidad = 0;
+    // totalCarrito += libro.precio * libro.cantidad;
+    // totalCantidad += libro.cantidad;
+
+
 
 const eliminarLibro = (id)=>{
     CARRITO = CARRITO.filter(libro => libro.id !== id);
@@ -209,5 +232,36 @@ const cambiarCantidad = (id, cantidad)=>{
     mostrarCarrito();
     guardarCarritoEnLocalStorage();
 }
+
+
+const totalIndividual = (id, precio, cantidad)=>{
+    const libro = CARRITO.find (libro => libro.id === id);
+    if(cantidad > 0){
+        libro.total = precio * cantidad;
+    }else{
+        eliminarLibro(id);
+    }
+
+    mostrarCarrito();
+    guardarCarritoEnLocalStorage();
+}
+
+
 export {mostrarLibros}
+
+
+const buttonDarkMode = document.querySelector("#dark");
+buttonDarkMode.addEventListener("click", cambiarADark);
+
+
+//MODO OSCURO
+function cambiarADark(){
+    body.classList.toggle("dark-mode");
+    
+    if(body.classList.contains("dark-mode")){
+        buttonDarkMode.innerText = "Modo Claro"
+    }else{
+        buttonDarkMode.innerText = "Modo Oscuro"
+    }
+}
 
