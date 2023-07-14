@@ -160,7 +160,10 @@ nav #toggle, nav label {
 
 .total {
   font-family: "Poppins", sans-serif;
-  text-align: center; }
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px; }
 
 .botonCompra {
   background-color: #7b5c7e;
@@ -317,6 +320,7 @@ section::-webkit-scrollbar-thumb {
   border-radius: 20px; }
 
 footer p {
+  font-family: "Poppins", sans-serif;
   color: white;
   font-size: 20px; }
 

@@ -100,7 +100,7 @@ const agregarAlCarrito =(libro) =>{
 }
 
 
-const mostrarCarrito = ()=>{
+const mostrarCarrito = () => {
     const $contenedorCarrito = document.querySelector('.contenedor_compras');
     
     $contenedorCarrito.innerHTML = '';
@@ -154,6 +154,10 @@ const mostrarCarrito = ()=>{
             eliminarLibro(libro.id);
             const totalCantidad = CARRITO.reduce((total, item) => total + item.cantidad, 0);
             $carrito.textContent = totalCantidad;
+            if(CARRITO == 0){
+                CARRITO = [];
+                $contenedorCarrito.innerHTML = ''
+            }
             Swal.fire({
                 icon: 'error',
                 title: 'Se eliminó del carrito',
@@ -165,7 +169,6 @@ const mostrarCarrito = ()=>{
         $div6.appendChild($button);
         $div.appendChild($div6);
 
-
         $contenedorCarrito.appendChild($div);
 
         const totalCantidad = CARRITO.reduce((total, item) => total + item.cantidad, 0);
@@ -174,7 +177,15 @@ const mostrarCarrito = ()=>{
 
 
         const $div7 = document.createElement('div');
-        $div7.classList.add('columna_4');
+        $div7.classList.add('columna_2')
+        $div7.classList.add('total');
+        const total = CARRITO.reduce((acc, item)=> acc + (item.precio * item.cantidad), 0);
+        $div7.textContent = 'TOTAL: $' + total;
+        $contenedorCarrito.appendChild($div7);
+
+
+        const $div8 = document.createElement('div');
+        $div8.classList.add('columna_4');
         
         const $buttonCompra = document.createElement('button');
         $buttonCompra.classList.add('columna_4');
@@ -188,34 +199,28 @@ const mostrarCarrito = ()=>{
             $carrito.textContent = totalCantidad;
             Swal.fire({
                 icon: 'success',
-                title: 'Gracias por comprar con nosotros',
-                text: 'Disfrutá tus libros y volvé pronto',
+                title: '¡Gracias por elegirnos!',
+                text: 'Esperamos que sea una lectura inspiradora. ¡Volvé pronto!',
             });
             guardarCarritoEnLocalStorage();
         });
 
-        $div7.appendChild($buttonCompra);
-        $contenedorCarrito.appendChild($div7);
-    }
-
-
-
-    // let totalCarrito = 0;
-    // let totalCantidad = 0;
-    // totalCarrito += libro.precio * libro.cantidad;
-    // totalCantidad += libro.cantidad;
+        $div8.appendChild($buttonCompra);
+        $contenedorCarrito.appendChild($div8);
+}
 
 
 
 const eliminarLibro = (id)=>{
     CARRITO = CARRITO.filter(libro => libro.id !== id);
+    
     mostrarCarrito();
     guardarCarritoEnLocalStorage();
 }
+
 const guardarCarritoEnLocalStorage = () => {
     localStorage.setItem('carrito', JSON.stringify(CARRITO));
 }
-
 
 const obtenerCarritoDelLocalStorage = () => {
     if(localStorage.getItem('carrito')){
@@ -233,7 +238,6 @@ const cambiarCantidad = (id, cantidad)=>{
     guardarCarritoEnLocalStorage();
 }
 
-
 const totalIndividual = (id, precio, cantidad)=>{
     const libro = CARRITO.find (libro => libro.id === id);
     if(cantidad > 0){
@@ -244,17 +248,16 @@ const totalIndividual = (id, precio, cantidad)=>{
 
     mostrarCarrito();
     guardarCarritoEnLocalStorage();
+
+
+    
 }
-
-
 export {mostrarLibros}
 
-
+//MODO OSCURO
 const buttonDarkMode = document.querySelector("#dark");
 buttonDarkMode.addEventListener("click", cambiarADark);
 
-
-//MODO OSCURO
 function cambiarADark(){
     body.classList.toggle("dark-mode");
     

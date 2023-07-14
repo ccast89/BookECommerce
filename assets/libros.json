@@ -6,7 +6,7 @@
         "autor": "Mike Lightwood",
         "tipo":"gay",
         "descripcion": "Como muchos millennials que están ya rozando la treintena, Eric atraviesa una situación económica complicada. Decidido a probar suerte en otro sitio, comienza a trabajar en un colegio como monitor de extraescolares. Lo que no sabe es que allí se encontrará a quien menos espera. Una historia sobre los primeros amores y la ilusión, sobre la perdida y las segundas oportunidades.",
-        "precio": 14.676
+        "precio": 14.671
     },
     {
         "id": "nosotros",
@@ -15,7 +15,7 @@
         "autor": "Becky Albertalli",
         "tipo":"gay",
         "descripcion": "Arthur está en Nueva York solo por el verano, pero si Broadway le ha enseñado algo es que el universo te puede enviar un impresionante romance cuando menos te lo esperas. Ben piensa que el universo debe ocuparse de sus propios asuntos. Si el universo lo apoyara, no estaría en camino a la oficina del correo llevando una caja con las pertenencias de su exnovio.Pero cuando Ben y Arthur se encuentran en el correo, ¿qué es exactamente lo que el universo les tiene reservado?",
-        "precio": 13.648
+        "precio": 13.641
     },
     {
         "id": "cuentan",
@@ -24,7 +24,7 @@
         "autor": "Iñigo Aguas",
         "tipo":"gay",
         "descripcion": "Enzo está hecho un lío. Acaba de cortar con su novio, pero pronto empieza a echarlo de menos y decide escribir una novela que cuenta su historia. Lo que no sabe es que una productora le comprará los derechos audiovisuales para hacer una película sobre ellos, y que volverá a ver a su ex cuando este se presente al casting para hacer de... él mismo.",
-        "precio": 16.596
+        "precio": 16.591
     },
     {
         "id": "parada",
@@ -33,7 +33,7 @@
         "autor": "Casey McQuiston",
         "tipo":"safico",
         "descripcion": "August, una joven de veintitrés años, no cree en casi nada. Ni en los videntes, ni en las amistades que se entablan con facilidad, ni en encontrar esa clase de amor que sale en las películas. Entonces llega Jane. La misteriosa e imposible Jane. Con mucho carácter, una sonrisa amable y el pelo alborotado, aparece para ayudar a August cuando ella más lo necesita.",
-        "precio": 7.177
+        "precio": 7.171
     },
     {
         "id": "siete",
@@ -42,7 +42,7 @@
         "autor": "Taylor Jenkins Reid",
         "tipo":"safico",
         "descripcion": "Evelyn Hugo, el ícono de Hollywood que se ha recluido en su edad madura, decide al fin contar la verdad sobre su vida llena de glamour y de escándalos. Pero cuando elige para ello a Monique Grant, una periodista desconocida, nadie se sorprende más que la misma Monique. ¿Por qué ella? ¿Por qué ahora?",
-        "precio": 16.287
+        "precio": 16.281
     },
     {
         "id": "plan",
@@ -51,7 +51,7 @@
         "autor": "Anna Pólux",
         "tipo":"safico",
         "descripcion": "Sandie y Elizabeth son polos opuestos. Un reportaje las obliga a convivir durante una semana en la que descubrirán que no son tan incompatibles como pensaban.",
-        "precio": 19.858
+        "precio": 19.851
     },
     {
         "id": "jessica",
@@ -60,7 +60,7 @@
         "autor": "John Boyne",
         "tipo":"trans",
         "descripcion": "Sam Waver es un chico solitario al que le cuesta hacer amigos, y sus padres están tan ajetreados que a veces se siente invisible. Por suerte, cuenta con su hermano mayor, Jason, quien parece tener una vida perfecta: no sólo es encantador y popular, también es la estrella del equipo de fútbol, y todas las chicas están deseando salir con él. Sam lo idolatra. Sin embargo, un día, Jason reúne a su familia para contarle un secreto que lleva guardando mucho tiempo: en realidad se llama Jessica. Sus padres no dan crédito y Sam descubre que no son las personas abiertas y tolerantes que creía. Las vidas de todos dan un vuelco y parece que las cosas nunca volverán a ser como antes.",
-        "precio": 12.422
+        "precio": 12.421
     },
     {
         "id": "chica",
@@ -69,7 +69,7 @@
         "autor": "Meredith Russo",
         "tipo":"trans",
         "descripcion": "AMANDA HARDY es la alumna nueva de la escuela en Lambertville; Tennesse. Como cualquier chica; lo unico que quiere es hacer amigos e integrarse. Pero Amanda mantiene un secreto. Existe una razón por la que se cambio de escuela en su último año y por la que tiene decidido no involucrarse con nadie.",
-        "precio": 5.175
+        "precio": 5.171
     },
     {
         "id": "stay",
@@ -87,7 +87,7 @@
         "autor": "Dahlia Adler",
         "tipo":"ingles",
         "descripcion": "Lara has everything she ever wanted: a tight-knit group of friends, a job that borders on cool, and Chase, the boy of her literal dreams. But if she is finally got the guy, why can not she stop thinking about the girl? Cool for the Summer is a story of self-discovery and new love. It is about the things we want and the things we need. And it is about the people who will let us be who we are.",
-        "precio":  17.192
+        "precio":  17.191
     },
     {
         "id": "royal",
@@ -96,7 +96,7 @@
         "autor": "Rachel Hawkins",
         "tipo":"ingles",
         "descripcion": "At first, the girls can barely stand each other--Flora is both high-class and high-key--but before Millie knows it, she has another sort-of-best-friend/sort-of-girlfriend. Even though Princess Flora could be a new chapter in her love life, Millie knows the chances of happily ever afters are slim . . . after all, real life is not a fairy tale . . . or is it?",
-        "precio": 3.442
+        "precio": 3.441
     },
     {
         "id": "melt",
@@ -105,7 +105,7 @@
         "autor": "Jennifer Dugan",
         "tipo":"ingles",
         "descripcion": "Fallon and Chloe used to be best friends, but last summer they hooked up right before Chloe left for college, and after a series of misunderstandings they are now not speaking to one another. A year later, Chloe is back home from school, and Fallon is doing everything in her power to avoid her--which is especially difficult because their moms own a business together, a gourmet ice cream truck where both girls work.",
-        "precio": 16.194
+        "precio": 16.191
     },
     {
         "id": "mistakes",
@@ -114,7 +114,7 @@
         "autor": "Meryl Wilsner",
         "tipo":"ingles",
         "descripcion": "When Cassie Klein goes to an off-campus bar to escape her school's Family Weekend, she isn't looking for a hookup—it just happens. Buying a drink for a stranger turns into what should be an uncomplicated, amazing one-night stand. But then the next morning rolls around and her friend drags her along to meet her mom—the hot, older woman Cassie slept with.",
-        "precio": 15.406
+        "precio": 15.401
     },
     {
         "id": "rojo",
@@ -132,7 +132,7 @@
         "autor": "Anna Pólux",
         "tipo":"safico",
         "descripcion": "Ser la mejor amiga de Danielle Nichols le parecía la bomba, pero, al crecer, Robin empezará a ver en Dani mucho más. Como lo bien que le queda el uniforme del equipo de balonmano y lo bonita que le parece su sonrisa tonta. Descubrirá que la verdadera bomba aún está por venir. Y le va a estallar en toda la cara cuando se enamore de ella.",
-        "precio": 18.516
+        "precio": 18.511
     },
     {
         "id": "coven",
@@ -141,7 +141,7 @@
         "autor": "Jennifer Dugan",
         "tipo":"ingles",
         "descripcion": "Emsy has always lived in sunny California, and she'd much rather spend her days surfing with her friends or hanging out with her girlfriend than honing her powers as a fire elemental. But when members of her family's coven back east are murdered under mysterious circumstances that can only be the result of powerful witchcraft, her family must suddenly return to dreary upstate New York. There, Emsy will have to master her neglected craft in order to find the killer . . . before her family becomes their next target.",
-        "precio": 15.344
+        "precio": 15.341
     },
     {
         "id": "us",
@@ -159,7 +159,7 @@
         "autor": "André Aciman",
         "tipo":"gay",
         "descripcion": "En una localidad de la costa de Italia, durante la década de los ochenta, la familia de Elio instauró la tradición de recibir en el verano a estudiantes o creadores jóvenes que, a cambio de alojamiento, ayudaran al cabeza de familia, catedrático, en sus compromisos culturales. Oliver es el elegido este verano, un joven escritor norteamericano que pronto excita la imaginación de Elio. Durante las siguientes semanas, los impulsos ocultos de obsesión y miedo, fascinación y deseo intensificarán su pasión.",
-        "precio": 13.803
+        "precio": 13.801
     },
     {
         "id": "cosmo",
@@ -168,7 +168,7 @@
         "autor": "Grizzly",
         "tipo":"safico",
         "descripcion": "Después de casi un año luchando con sus demonios, Lark deja su hogar en Manhattan para mudarse temporalmente al rancho de su abuela paterna en un pequeño pueblo llamado Sequoia Falls. Allí, además de reconectar con su abuela, conoce a Holly, una chica aficionada a la astronomía, que le enseña a ver la vida a través de sus ojos y a entender que algunas cosas son más simples de lo que pensamos. Le muestra el universo desde la ventana de su habitación y, más importante, le enseña lo que se siente al estar enamorada por primera vez.",
-        "precio": 18.472
+        "precio": 18.471
     },
     {
         "id": "get",
@@ -186,7 +186,7 @@
         "autor": "Alex Gino",
         "tipo":"trans",
         "descripcion": "Cuando la gente ve a George, cree que es un niño. Pero ella sabe que no es verdad. George sabe que es una niña. George cree que jamás podrá decirle a nadie que ella, en realidad, es una niña. Un día, su profesora anuncia que su clase va a representar una obra de teatro. Y George desea con todas sus fuerzas el papel de la niña protagonista, Charlotte. Pero su profesora le dice que ni siquiera puede hacer la prueba para el papel... porque es un chico. Con la ayuda de Kelly, su mejor amiga, George traza un plan. No solo para poder ser Charlotte en la obra, sino para que todo el mundo sepa, de una vez por todas, que es 'ella' en realidad.",
-        "precio": 15.575
+        "precio": 15.571
     },
     {
         "id": "conmigo",
@@ -195,7 +195,7 @@
         "autor": "Josh Taylor",
         "tipo":"gay",
         "descripcion": "Amigos de toda la vida, Lucas y Christian comenzaron a distanciarse cuando Lucas empezó a salir con su actual novia, una chica que odia a su mejor amigo, y que intentara mantenerlos separados. Mientras Christian intenta olvidar a su amigo, y el enamoramiento que puede tener por él, mientras Lucas comienza a darse cuenta de que estar separado de su amigo le afecta más de lo que quiere aceptar. Ambos tratarán seguir adelante, sin saber que el destino les depara una sorpresa.",
-        "precio": 15.356
+        "precio": 15.351
     },
     {
         "id": "cuarta",
@@ -204,7 +204,7 @@
         "autor": "Andrea Mira",
         "tipo":"safico",
         "descripcion": "La humanidad se enfrenta al peor genocidio registrado y conocido de la historia: la Catástrofe Z, un arma biológica que se lo ha llevado todo a su paso y ha dejado un mundo de muertos vivientes. Solo pequeños grupos dispersos de gente viva continúan en pie, sin apenas esperanza de que la situación mejore o se resuelva. Sin embargo, hay dos personas que podrían cambiarlo todo: Evolet Lexter ve en el apocalipsis zombi, por fin, su ansiada libertad. Pero todo se le tuerce un poco cuando se encuentra con el grupo de Alison…",
-        "precio": 15.924
+        "precio": 15.921
     },
     {
         "id": "montage",
@@ -213,6 +213,6 @@
         "autor": "Ciara Smyth",
         "tipo":"ingles",
         "descripcion": "Saoirse doesn't believe in love at first sight or happy endings. If they were real, her mother would still be able to remember her name and not in a care home with early onset dementia. A condition that Saoirse may one day turn out to have inherited. So she's not looking for a relationship. She doesn't see the point in igniting any romantic sparks if she's bound to burn out.",
-        "precio": 16.547
+        "precio": 16.541
     }
 ]
