@@ -114,46 +114,46 @@ nav #toggle, nav label {
   font-weight: bold;
   cursor: pointer; }
 
-.tbody {
+.tabla {
   display: flex;
   align-items: center;
   display: grid;
   grid-template-columns: 30% 30% 15% 15% 10%;
   grid-row: 100px; }
 
-.columna_1 {
+.col1 {
   grid-column: 1/2;
   grid-row: 1/2;
   text-align: center; }
 
-.columna_1 img {
+.col1 img {
   width: 100px;
   height: auto; }
 
-.columna_2 {
+.col2 {
   grid-column: 2/3;
   grid-row: 1/2;
   text-align: center;
   font-family: "Poppins", sans-serif; }
 
-.columna_3 {
+.col3 {
   grid-column: 3/4;
   grid-row: 1/2;
   text-align: center;
   font-family: "Poppins", sans-serif; }
 
-.columna_3 input {
+.col3 input {
   width: 50px;
   height: 30px;
   text-align: center; }
 
-.columna_4 {
+.col4 {
   grid-column: 4/5;
   grid-row: 1/2;
   text-align: center;
   font-family: "Poppins", sans-serif; }
 
-.columna_5 {
+.col5 {
   grid-column: 5/6;
   grid-row: 1/2;
   text-align: center; }

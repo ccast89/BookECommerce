@@ -1,7 +1,13 @@
 import { mostrarLibros } from "./index.js";
 
 const filtrosCategorias = (LIBROS)=>{
-    
+
+    const inicio = document.querySelector('#inicio');
+    inicio.addEventListener('click', ()=>{
+        const inicio = document.libro;
+        mostrarLibros(LIBROS);
+    })
+
     const safico = document.querySelector('#safico');
     safico.addEventListener('click', ()=>{
         const safico = LIBROS.filter(libro => libro.tipo === 'safico')

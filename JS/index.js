@@ -33,7 +33,7 @@ const mostrarLibros = (LIBROS)=>{
 
         const $desc = document.createElement('p');
         $desc.textContent = libro.descripcion;
-        $desc.classList.add('descripcion')
+        $desc.classList.add('descripcion');
 
         const $div2 = document.createElement('div');
         $div2.classList.add('"card","card-content"');
@@ -107,10 +107,10 @@ const mostrarCarrito = () => {
     
     CARRITO.forEach (libro =>{
         const $div = document.createElement('div');
-        $div.classList.add('tbody');
+        $div.classList.add('tabla');
     
         const $div2 = document.createElement('div');
-        $div2.classList.add('columna_1');
+        $div2.classList.add('col1');
     
         const $img = document.createElement('img');
         $img.classList.add('img_cart');
@@ -120,12 +120,12 @@ const mostrarCarrito = () => {
         $div.appendChild($div2);
     
         const $div3 = document.createElement('div');
-        $div3.classList.add('columna_2');
+        $div3.classList.add('col2');
         $div3.textContent = libro.nombre;
         $div.appendChild($div3);
     
         const $div4 = document.createElement('div');
-        $div4.classList.add('columna_3');
+        $div4.classList.add('col3');
     
         const $input = document.createElement('input');
         $input.type = 'number';
@@ -140,12 +140,12 @@ const mostrarCarrito = () => {
         $div.appendChild($div4);
     
         const $div5 = document.createElement('div');
-        $div5.classList.add('columna_4');
+        $div5.classList.add('col4');
         $div5.textContent = `$ ${libro.precio * libro.cantidad}`;
         $div.appendChild($div5);
     
         const $div6 = document.createElement('div');
-        $div6.classList.add('columna_5');
+        $div6.classList.add('col5');
     
         const $button = document.createElement('button');
         $button.textContent = 'X';
@@ -177,7 +177,7 @@ const mostrarCarrito = () => {
 
 
         const $div7 = document.createElement('div');
-        $div7.classList.add('columna_2')
+        $div7.classList.add('col2')
         $div7.classList.add('total');
         const total = CARRITO.reduce((acc, item)=> acc + (item.precio * item.cantidad), 0);
         $div7.textContent = 'TOTAL: $' + total;
@@ -185,10 +185,10 @@ const mostrarCarrito = () => {
 
 
         const $div8 = document.createElement('div');
-        $div8.classList.add('columna_4');
+        $div8.classList.add('col4');
         
         const $buttonCompra = document.createElement('button');
-        $buttonCompra.classList.add('columna_4');
+        $buttonCompra.classList.add('col4');
         $buttonCompra.classList.add('botonCompra');
         $buttonCompra.textContent = 'Comprar';
 
